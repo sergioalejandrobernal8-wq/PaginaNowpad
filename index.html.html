@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOWPAD — People Are Different</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+HEADER
+===================================================== -->
+
+<header class="header">
+
+    <a href="#inicio" class="logo">
+        NOW<span>PAD</span>
+    </a>
+
+
+    <nav class="nav" id="nav">
+
+        <a href="#inicio">Inicio</a>
+
+        <a href="#coleccion">Colección</a>
+
+        <a href="#nosotros">Nosotros</a>
+
+        <a href="#experiencia">Experiencia</a>
+
+        <a href="#contacto">Contacto</a>
+
+    </nav>
+
+
+    <button class="cart-button" onclick="openCart()">
+
+        🛒
+
+        <span id="cart-count">0</span>
+
+    </button>
+
+
+    <button class="menu-button" onclick="toggleMenu()">
+
+        ☰
+
+    </button>
+
+</header>
+
+
+
+<!-- =====================================================
+HERO
+===================================================== -->
+
+<main>
+
+<section class="hero" id="inicio">
+
+
+    <div class="hero-content">
+
+        <p class="hero-small">
+            NOW PEOPLE ARE DIFFERENT
+        </p>
+
+
+        <h1>
+
+            NO NACIMOS<br>
+
+            PARA VERNOS<br>
+
+            <span>IGUAL.</span>
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            Ropa para quienes no necesitan aprobación
+            para expresar quiénes son.
+
+        </p>
+
+
+        <a href="#coleccion" class="main-button">
+
+            VER COLECCIÓN →
+
+        </a>
+
+    </div>
+
+
+
+    <div class="hero-image">
+
+        <img
+            src="Ima/INTERFAZMODELO1.jpeg"
+            alt="Modelo usando ropa urbana"
+        >
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+MANIFIESTO
+===================================================== -->
+
+<section class="manifesto">
+
+    <p>NOWPAD</p>
+
+
+    <h2>
+
+        TU ESTILO.<br>
+
+        TU IDENTIDAD.<br>
+
+        <span>TU REGLA.</span>
+
+    </h2>
+
+</section>
+
+
+
+<!-- =====================================================
+COLECCIÓN
+===================================================== -->
+
+<section class="collection" id="coleccion">
+
+
+    <div class="section-header">
+
+        <div>
+
+            <p class="section-tag">
+                01 / COLLECTION
+            </p>
+
+
+            <h2>
+
+                VISTE<br>
+
+                <span>DIFERENTE.</span>
+
+            </h2>
+
+        </div>
+
+
+        <p class="section-description">
+
+            Diseñamos prendas oversize inspiradas
+            en la cultura urbana y la libertad de expresión.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="products">
+
+
+        <!-- ================= PRODUCTO 1 ================= -->
+
+        <article class="product">
+
+
+            <div class="product-image">
+
+                <img
+                    src="Ima/PRODUCTO1NOWPAD.jpeg"
+                    alt="NOW BASIC TEE"
+                >
+
+                <span class="product-tag">
+                    NEW
+                </span>
+
+            </div>
+
+
+            <div class="product-info">
+
+                <div>
+
+                    <h3>
+                        NOW BASIC TEE
+                    </h3>
+
+                    <p>
+                        Oversize / Black
+                    </p>
+
+                </div>
+
+
+                <strong>
+                    $89.900
+                </strong>
+
+            </div>
+
+
+            <button
+                class="product-button"
+                onclick="openProduct(
+                    'NOW BASIC TEE',
+                    89900,
+                    'Negro',
+                    'Camiseta oversize básica de estilo urbano. Cómoda, versátil y diseñada para expresar tu identidad.',
+                    'Ima/PRODUCTO1NOWPAD.jpeg'
+                )"
+            >
+
+                VER PRODUCTO →
+
+            </button>
+
+
+        </article>
+
+
+
+        <!-- ================= PRODUCTO 2 ================= -->
+
+        <article class="product">
+
+
+            <div class="product-image">
+
+                <img
+                    src="Ima/PRODUCTO2NOWPAD.jpeg"
+                    alt="DIFFERENT TEE"
+                >
+
+            </div>
+
+
+            <div class="product-info">
+
+                <div>
+
+                    <h3>
+                        DIFFERENT TEE
+                    </h3>
+
+                    <p>
+                        Oversize / White
+                    </p>
+
+                </div>
+
+
+                <strong>
+                    $94.900
+                </strong>
+
+            </div>
+
+
+            <button
+                class="product-button"
+                onclick="openProduct(
+                    'DIFFERENT TEE',
+                    94900,
+                    'Blanco',
+                    'Prenda oversize inspirada en la individualidad y la libertad de ser diferente.',
+                    'Ima/PRODUCTO2NOWPAD.jpeg'
+                )"
+            >
+
+                VER PRODUCTO →
+
+            </button>
+
+
+        </article>
+
+
+
+        <!-- ================= PRODUCTO 3 ================= -->
+
+        <article class="product">
+
+
+            <div class="product-image">
+
+                <img
+                    src="Ima/PRODUCTO3NOWPAD.jpeg"
+                    alt="NOW STREET"
+                >
+
+            </div>
+
+
+            <div class="product-info">
+
+                <div>
+
+                    <h3>
+                        NOW STREET
+                    </h3>
+
+                    <p>
+                        Oversize / Grey
+                    </p>
+
+                </div>
+
+
+                <strong>
+                    $99.900
+                </strong>
+
+            </div>
+
+
+            <button
+                class="product-button"
+                onclick="openProduct(
+                    'NOW STREET',
+                    99900,
+                    'Gris',
+                    'Camiseta streetwear oversize con una estética urbana y moderna.',
+                    'Ima/PRODUCTO3NOWPAD.jpeg'
+                )"
+            >
+
+                VER PRODUCTO →
+
+            </button>
+
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+NOSOTROS
+===================================================== -->
+
+<section class="about" id="nosotros">
+
+
+    <div class="about-image">
+
+        <img
+            src="Ima/INTERFAZBUSO2.jpeg"
+            alt="Estilo urbano"
+        >
+
+    </div>
+
+
+    <div class="about-content">
+
+        <p class="section-tag">
+            02 / ABOUT NOWPAD
+        </p>
+
+
+        <h2>
+
+            PEOPLE<br>
+
+            ARE<br>
+
+            <span>DIFFERENT.</span>
+
+        </h2>
+
+
+        <p>
+
+            NOWPAD nace para representar a quienes
+            entienden la moda como una forma de expresión.
+
+        </p>
+
+
+        <p>
+
+            No seguimos reglas. Creamos nuestro propio
+            camino y vestimos nuestra identidad.
+
+        </p>
+
+
+        <p>
+
+            Nuestra propuesta combina comodidad,
+            creatividad y estética streetwear.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+EXPERIENCIA
+===================================================== -->
+
+<section class="experience" id="experiencia">
+
+
+    <div class="section-header">
+
+        <div>
+
+            <p class="section-tag">
+                03 / EXPERIENCE
+            </p>
+
+
+            <h2>
+
+                MÁS QUE<br>
+
+                <span>ROPA.</span>
+
+            </h2>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="experience-grid">
+
+
+        <div class="experience-card">
+
+            <span>01</span>
+
+            <h3>IDENTIDAD</h3>
+
+            <p>
+
+                Cada prenda representa una forma
+                diferente de expresarte.
+
+            </p>
+
+        </div>
+
+
+        <div class="experience-card">
+
+            <span>02</span>
+
+            <h3>CALIDAD</h3>
+
+            <p>
+
+                Diseñamos pensando en comodidad,
+                durabilidad y estilo.
+
+            </p>
+
+        </div>
+
+
+        <div class="experience-card">
+
+            <span>03</span>
+
+            <h3>LIBERTAD</h3>
+
+            <p>
+
+                No tienes que vestirte como los demás
+                para pertenecer.
+
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+FRASE
+===================================================== -->
+
+<section class="statement">
+
+    <h2>
+
+        STREET.<br>
+
+        <span>LUXURY.</span>
+
+    </h2>
+
+</section>
+
+
+
+<!-- =====================================================
+CONTACTO
+===================================================== -->
+
+<section class="contact" id="contacto">
+
+
+    <div>
+
+        <p class="section-tag">
+            04 / CONTACT
+        </p>
+
+
+        <h2>
+            HABLEMOS.
+        </h2>
+
+
+        <p>
+
+            ¿Tienes una pregunta, propuesta o simplemente
+            quieres conocer más sobre NOWPAD?
+
+        </p>
+
+    </div>
+
+
+
+    <form id="contact-form">
+
+
+        <input
+            type="text"
+            placeholder="NOMBRE"
+            required
+        >
+
+
+        <input
+            type="email"
+            placeholder="CORREO"
+            required
+        >
+
+
+        <textarea
+            placeholder="MENSAJE"
+            rows="5"
+            required
+        ></textarea>
+
+
+        <button type="submit">
+
+            ENVIAR MENSAJE →
+
+        </button>
+
+
+    </form>
+
+</section>
+
+</main>
+
+
+
+<!-- =====================================================
+FOOTER
+===================================================== -->
+
+<footer>
+
+
+    <div class="footer-logo">
+
+        <img
+            src="Ima/LOGOSINFONDO.png"
+            alt="Logo NOWPAD"
+        >
+
+    </div>
+
+
+    <p>
+        NOW PEOPLE ARE DIFFERENT.
+    </p>
+
+
+    <div class="footer-links">
+
+        <a href="#inicio">
+            Inicio
+        </a>
+
+        <a href="#coleccion">
+            Colección
+        </a>
+
+        <a href="#nosotros">
+            Nosotros
+        </a>
+
+        <a href="#contacto">
+            Contacto
+        </a>
+
+    </div>
+
+
+    <p class="copyright">
+
+        © 2026 NOWPAD. Todos los derechos reservados.
+
+    </p>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+CARRITO
+===================================================== -->
+
+<div class="cart-overlay" id="cart">
+
+
+    <div class="cart">
+
+
+        <button
+            class="close-cart"
+            onclick="closeCart()"
+        >
+
+            ×
+
+        </button>
+
+
+        <h2>
+            TU CARRITO
+        </h2>
+
+
+        <div id="cart-items"></div>
+
+
+        <div class="cart-total">
+
+            <span>
+                TOTAL
+            </span>
+
+
+            <strong id="cart-total">
+                $0
+            </strong>
+
+        </div>
+
+
+        <button
+            class="checkout"
+            onclick="openCheckout()"
+        >
+
+            FINALIZAR COMPRA →
+
+        </button>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+MODAL PRODUCTO
+===================================================== -->
+
+<div
+    class="product-overlay"
+    id="product-modal"
+>
+
+
+    <div class="product-detail">
+
+
+        <button
+            class="close-product"
+            onclick="closeProduct()"
+        >
+
+            ×
+
+        </button>
+
+
+        <div class="product-detail-image">
+
+            <img
+                id="detail-image"
+                src=""
+                alt="Producto"
+            >
+
+        </div>
+
+
+        <div class="product-detail-info">
+
+
+            <p class="section-tag">
+                NOWPAD
+            </p>
+
+
+            <h2 id="detail-name">
+                PRODUCTO
+            </h2>
+
+
+            <p
+                class="detail-price"
+                id="detail-price"
+            >
+                $0
+            </p>
+
+
+            <p
+                class="detail-description"
+                id="detail-description"
+            ></p>
+
+
+            <p class="detail-label">
+                COLOR
+            </p>
+
+
+            <p
+                class="detail-color"
+                id="detail-color"
+            ></p>
+
+
+            <p class="detail-label">
+                SELECCIONA TU TALLA
+            </p>
+
+
+            <div class="sizes">
+
+                <button onclick="selectSize(this)">
+                    S
+                </button>
+
+                <button onclick="selectSize(this)">
+                    M
+                </button>
+
+                <button onclick="selectSize(this)">
+                    L
+                </button>
+
+                <button onclick="selectSize(this)">
+                    XL
+                </button>
+
+            </div>
+
+
+            <button
+                class="add-detail-button"
+                onclick="addSelectedProduct()"
+            >
+
+                AGREGAR AL CARRITO →
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+CHECKOUT
+===================================================== -->
+
+<div
+    class="checkout-overlay"
+    id="checkout-modal"
+>
+
+
+    <div class="checkout-box">
+
+
+        <button
+            class="close-checkout"
+            onclick="closeCheckout()"
+        >
+
+            ×
+
+        </button>
+
+
+        <p class="section-tag">
+            NOWPAD / CHECKOUT
+        </p>
+
+
+        <h2>
+
+            FINALIZAR<br>
+
+            <span>COMPRA.</span>
+
+        </h2>
+
+
+        <div
+            class="checkout-summary"
+            id="checkout-summary"
+        ></div>
+
+
+        <form id="checkout-form">
+
+
+            <input
+                type="text"
+                id="customer-name"
+                placeholder="NOMBRE COMPLETO"
+                required
+            >
+
+
+            <input
+                type="tel"
+                id="customer-phone"
+                placeholder="TELÉFONO"
+                required
+            >
+
+
+            <input
+                type="text"
+                id="customer-address"
+                placeholder="DIRECCIÓN DE ENVÍO"
+                required
+            >
+
+
+            <input
+                type="text"
+                id="customer-city"
+                placeholder="CIUDAD"
+                required
+            >
+
+
+            <select
+                id="payment-method"
+                required
+            >
+
+                <option value="">
+                    SELECCIONA MÉTODO DE PAGO
+                </option>
+
+                <option value="Contra entrega">
+                    Contra entrega
+                </option>
+
+                <option value="Transferencia">
+                    Transferencia bancaria
+                </option>
+
+                <option value="Nequi">
+                    Nequi
+                </option>
+
+                <option value="Daviplata">
+                    Daviplata
+                </option>
+
+            </select>
+
+
+            <button type="submit">
+
+                CONFIRMAR PEDIDO →
+
+            </button>
+
+
+        </form>
+
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
